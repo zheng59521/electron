@@ -23,6 +23,8 @@
           <div class="title alt">Other Documentation</div>
           <button class="alt" @click="open('https://electron.atom.io/docs/')">Electron</button>
           <button class="alt" @click="open('https://vuejs.org/v2/guide/')">Vue.js</button>
+          <router-link to="/login">登录</router-link>
+          <button class="alt" @click="login">路由登录</button>
         </div>
       </div>
     </main>
@@ -38,13 +40,16 @@
     methods: {
       open (link) {
         this.$electron.shell.openExternal(link)
+      },
+      login ()  {
+        this.$router.push('/login')
       }
     }
   }
 </script>
 
 <style>
-  @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+  /* @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro'); */
 
   * {
     box-sizing: border-box;

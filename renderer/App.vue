@@ -12,4 +12,7 @@
 
 <style>
   /* CSS */
+  .text{
+    animation: down 1s;
+  }
 </style>
