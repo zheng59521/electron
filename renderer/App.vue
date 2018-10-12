@@ -14,5 +14,16 @@
   /* CSS */
   .text{
     animation: down 1s;
+    animation-fill-mode: forwards;
+    color:hotpink;
+  }
+  @keyframes down {
+    from {
+      opacity: 1;
+    }
+    to{
+      opacity: 0;
+      /* top:0; */
+    }
   }
 </style>
